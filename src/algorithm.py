@@ -41,6 +41,8 @@ class Algorithm(object):
         self.findUpdateMasks()
         self.applyUpdateRules()
 
+        return self.array
+
 if __name__ == '__main__':
     lattice= np.random.choice(np.array([1,0]), size=(50,50))
     algorithms= Algorithm()
