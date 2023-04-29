@@ -1,4 +1,5 @@
 import numpy as np
+from time import time
 from animate import Animate
 from algorithm import Algorithm
 
@@ -47,7 +48,8 @@ class Simulate(object):
         # Run simulation and visualisation of cellular automata
         
         while True:
+            t1= time()
             self.lattice= self.algorithms.updateLattice(self.lattice)
             self.animation.draw_image(self.lattice)
-
+            print(f'{time()-t1:.5} s')
 

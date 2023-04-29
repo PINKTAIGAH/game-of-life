@@ -18,10 +18,9 @@ class Animate(object):
     def draw_image(self, lattice_array):
     #=======================================================
     # Draw frame of the animation
-        plt.clf()
+        
         plt.cla()
         self.im= plt.imshow(lattice_array, animated= True, cmap= self.cmap)
-        plt.colorbar()
         plt.draw()
         plt.pause(0.0001)
 
