@@ -45,8 +45,9 @@ class Simulate(object):
     def runSimulation(self):
         #==========================================================
         # Run simulation and visualisation of cellular automata
-
+        
         while True:
             self.lattice= self.algorithms.updateLattice(self.lattice)
             self.animation.draw_image(self.lattice)
+
 
