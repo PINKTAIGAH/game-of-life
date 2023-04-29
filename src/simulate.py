@@ -50,6 +50,6 @@ class Simulate(object):
         while True:
             t1= time()
             self.lattice= self.algorithms.updateLattice(self.lattice)
-            self.animation.draw_image(self.lattice)
+            self.animation.drawImage(self.lattice)
             print(f'{time()-t1:.5} s')
 

@@ -15,7 +15,7 @@ class Animate(object):
         self.im= plt.imshow(lattice_array, animated=True, cmap= self.cmap)
         plt.colorbar()
 
-    def draw_image(self, lattice_array):
+    def drawImage(self, lattice_array):
     #=======================================================
     # Draw frame of the animation
         
